@@ -32,3 +32,11 @@ Título: Transferencia sin confirmación previa
 Resultado esperado: El sistema solicita confirmación antes de enviar
 ---------------------------
 listo
+
+---------------------------
+# Check final
+
+- Node.js LTS + npm: instalado y funcionando (ejecución correcta de scripts con node).
+- Git y GitHub Desktop: instalados y utilizados para clonar el repositorio, crear ramas, commitear y pushear.
+- Navegadores (Chrome / Firefox / Edge): instalados.
+- Cursor: instalado y utilizado como editor principal.
