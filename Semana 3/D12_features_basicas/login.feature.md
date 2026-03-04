@@ -1,40 +1,40 @@
 Noelia Mustaff | Martín Cabrera
 
 Feature: Inicio de sesión
-    Como Usuario registrado
-    Quiero Iniciar sesión
-    Para Acceder a mi cuenta y usar funcionalidades protegidas.
+    Como usuario registrado
+    Quiero iniciar sesión
+    Para acceder a mi cuenta y usar funcionalidades protegidas.
 
     Background: 
-        Given El usuario tiene una cuenta existente.
-        And no tiene una sesión iniciada al comenzar.
-        And El servicio de autenticación está disponible (o, si no, se espera un error controlado).
+        Given el usuario tiene una cuenta existente
+        And no tiene una sesión iniciada al comenzar
+        And el servicio de autenticación está disponible (o, si no, se espera un error controlado)
 
-        Scenario: Inicio de sesión con credenciales válidas
-            Given El usuario posee una cuenta habilitada.
-            When ingresa credenciales válidas.
-            Then El sistema inicia sesión
-            And accede a su cuenta.
+    Scenario: Inicio de sesión con credenciales válidas
+        Given el usuario posee una cuenta habilitada
+        When ingresa credenciales válidas
+        Then el sistema inicia sesión
+        And accede a su cuenta
 
-        Scenario: Expiración de sesión por inactividad
-            Given El usuario inició sesión.
-            When Pasa T de inactividad
-            Then la sesión se cierra.
+    Scenario: Expiración de sesión por inactividad
+        Given el usuario tiene una sesión iniciada
+        When transcurre T tiempo de inactividad
+        Then el sistema cierra la sesión
 
-        Scenario: Inicio de sesión con credenciales inválidas.
-            Given El usuario posee una cuenta habilitada.
-            When Ingresa credenciales inválidas.
-            Then El sistema no inicia sesión.
-            And Muestra un mensaje genérico de error.
+    Scenario: Inicio de sesión con credenciales inválidas.
+        Given el usuario posee una cuenta habilitada
+        When ingresa credenciales inválidas
+        Then el sistema no inicia sesión
+        And muestra un mensaje genérico de error
 
-        Scenario: Bloqueo temporal por reiterados intentos fallidos de inicio de sesión.
-            Given El usuario posee una cuenta habilitada.
-            When Supera N intentos fallidos de inicio de sesión
-            Then El sistema bloquea temporalmente el acceso
-            And Informa el bloqueo
+    Scenario: Bloqueo temporal por reiterados intentos fallidos de inicio de sesión.
+        Given el usuario posee una cuenta habilitada
+        When supera N intentos fallidos de inicio de sesión
+        Then el sistema bloquea temporalmente el acceso
+        And informa el bloqueo
 
-        Scenario: Campos obligatorios vacíos.
-            Given El usuario posee una cuenta habilitada.
-            When intenta iniciar sesión sin completar email o contraseña
-            Then El sistema bloquea el inicio de sesión
-            And Informa que el campo es obligatorio
+    Scenario: Campos obligatorios vacíos.
+        Given el usuario posee una cuenta habilitada
+        When intenta iniciar sesión sin completar email o contraseña
+        Then el sistema bloquea el inicio de sesión
+        And informa que el campo es obligatorio
