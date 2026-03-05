@@ -24,13 +24,13 @@ Feature: Búsqueda y filtrado de productos
     Then el sistema muestra solo los productos que cumplen ambos criterios
  
   Scenario Outline: Búsqueda por nombre
-    When el usuario realiza una búsqueda con <criterio>
+    When el usuario realiza una búsqueda con <nombre>
     Then el sistema <resultado>
  
     Examples:
-      | criterio                | resultado                                      |
-      | un nombre válido        | muestra los productos que coinciden            |
-      | un nombre inexistente   | informa que no se encontraron resultados       |
+      | nombre                  | resultado                                             |
+      | Linternas               | muestra un listado de todas las linternas disponibles |
+      | Liternas                | informa que no se encontraron resultados              |
  
  
 # Notas:
