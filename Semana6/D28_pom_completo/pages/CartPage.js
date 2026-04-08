@@ -5,10 +5,16 @@ export class CartPage extends BasePage {
   constructor(page) {
     super(page);
     this.cartItemRows = page.locator('.cart_item');
+    this.checkoutButton = page.getByRole('button', { name: 'Checkout' });
   }
 
   async assertLoaded() {
     await expect(this.page).toHaveURL(/cart\.html/);
+  }
+
+  async startCheckout() {
+    await this.checkoutButton.click();
+    await expect(this.page).toHaveURL(/checkout-step-one\.html/);
   }
 
   async assertItemWithPrice(productName, expectedPrice) {

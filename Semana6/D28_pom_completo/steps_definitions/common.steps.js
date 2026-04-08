@@ -24,3 +24,8 @@ When('inicio sesión con el usuario {string} y la contraseña {string}', async f
   const login = new LoginPage(this.page);
   await login.login(u, p);
 });
+
+When('agrego el producto {string} al carrito', async function (producto) {
+  const inventory = new InventoryPage(this.page);
+  await inventory.addToCart(producto);
+});
