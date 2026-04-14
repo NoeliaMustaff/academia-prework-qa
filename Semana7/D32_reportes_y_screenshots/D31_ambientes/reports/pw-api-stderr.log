@@ -1,0 +1,890 @@
+2026-04-14T18:35:05.540Z pw:api => browserType.launch started
+2026-04-14T18:35:05.680Z pw:api <= browserType.launch succeeded
+2026-04-14T18:35:05.731Z pw:api => browser.newContext started
+2026-04-14T18:35:05.757Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:05.757Z pw:api => browserContext.newPage started
+2026-04-14T18:35:05.880Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:05.894Z pw:api => page.goto started
+2026-04-14T18:35:05.896Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:06.365Z pw:api   "commit" event fired
+2026-04-14T18:35:06.366Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:06.598Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:06.692Z pw:api   "load" event fired
+2026-04-14T18:35:06.692Z pw:api <= page.goto succeeded
+2026-04-14T18:35:06.693Z pw:api => locator.fill started
+2026-04-14T18:35:06.696Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:06.735Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:06.738Z pw:api   fill("standard_user")
+2026-04-14T18:35:06.738Z pw:api attempting fill action
+2026-04-14T18:35:06.738Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:06.759Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:06.759Z pw:api => locator.fill started
+2026-04-14T18:35:06.760Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:06.766Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:06.768Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:06.768Z pw:api attempting fill action
+2026-04-14T18:35:06.768Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:06.774Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:06.774Z pw:api => locator.click started
+2026-04-14T18:35:06.775Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:06.785Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:06.791Z pw:api attempting click action
+2026-04-14T18:35:06.791Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:06.820Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:06.820Z pw:api   scrolling into view if needed
+2026-04-14T18:35:06.821Z pw:api   done scrolling
+2026-04-14T18:35:06.825Z pw:api   performing click action
+2026-04-14T18:35:06.836Z pw:api   navigated to "https://www.saucedemo.com/inventory.html"
+2026-04-14T18:35:06.929Z pw:api   click action done
+2026-04-14T18:35:06.929Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:06.931Z pw:api   navigations have finished
+2026-04-14T18:35:06.931Z pw:api <= locator.click succeeded
+2026-04-14T18:35:06.935Z pw:api => frame._expect started
+2026-04-14T18:35:06.937Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:06.940Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:06.941Z pw:api => locator._expect started
+2026-04-14T18:35:06.942Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:06.942Z pw:api waiting for getByText('Products')
+2026-04-14T18:35:06.953Z pw:api   locator resolved to <span class="title" data-test="title">Products</span>
+2026-04-14T18:35:06.953Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:06.954Z pw:api => locator.click started
+2026-04-14T18:35:06.957Z pw:api waiting for locator('.inventory_item').filter({ has: getByText('Sauce Labs Backpack') }).getByRole('button', { name: /Add to cart/i })
+2026-04-14T18:35:06.968Z pw:api   locator resolved to <button id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" data-test="add-to-cart-sauce-labs-backpack" class="btn btn_primary btn_small btn_inventory ">Add to cart</button>
+2026-04-14T18:35:06.969Z pw:api attempting click action
+2026-04-14T18:35:06.969Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:06.983Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:06.983Z pw:api   scrolling into view if needed
+2026-04-14T18:35:06.984Z pw:api   done scrolling
+2026-04-14T18:35:06.989Z pw:api   performing click action
+2026-04-14T18:35:06.995Z pw:api   click action done
+2026-04-14T18:35:06.995Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:06.997Z pw:api   navigations have finished
+2026-04-14T18:35:06.997Z pw:api <= locator.click succeeded
+2026-04-14T18:35:06.998Z pw:api => locator.click started
+2026-04-14T18:35:06.999Z pw:api waiting for locator('.shopping_cart_link')
+2026-04-14T18:35:07.004Z pw:api   locator resolved to <a class="shopping_cart_link" data-test="shopping-cart-link">…</a>
+2026-04-14T18:35:07.005Z pw:api attempting click action
+2026-04-14T18:35:07.006Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:07.033Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:07.033Z pw:api   scrolling into view if needed
+2026-04-14T18:35:07.034Z pw:api   done scrolling
+2026-04-14T18:35:07.036Z pw:api   performing click action
+2026-04-14T18:35:07.043Z pw:api   navigated to "https://www.saucedemo.com/cart.html"
+2026-04-14T18:35:07.046Z pw:api   click action done
+2026-04-14T18:35:07.046Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:07.047Z pw:api   navigations have finished
+2026-04-14T18:35:07.047Z pw:api <= locator.click succeeded
+2026-04-14T18:35:07.048Z pw:api => frame._expect started
+2026-04-14T18:35:07.048Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:07.050Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:07.051Z pw:api => locator._expect started
+2026-04-14T18:35:07.052Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:07.052Z pw:api waiting for locator('.cart_item').filter({ has: getByText('Sauce Labs Backpack') })
+2026-04-14T18:35:07.056Z pw:api   locator resolved to <div class="cart_item" data-test="inventory-item">…</div>
+2026-04-14T18:35:07.056Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:07.057Z pw:api => locator._expect started
+2026-04-14T18:35:07.057Z pw:api Expect "to.have.text" with timeout 5000ms
+2026-04-14T18:35:07.058Z pw:api waiting for locator('.cart_item').filter({ has: getByText('Sauce Labs Backpack') }).locator('.inventory_item_price')
+2026-04-14T18:35:07.060Z pw:api   locator resolved to <div class="inventory_item_price" data-test="inventory-item-price">$29.99</div>
+2026-04-14T18:35:07.060Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:07.063Z pw:api => page.close started
+2026-04-14T18:35:07.092Z pw:api <= page.close succeeded
+2026-04-14T18:35:07.093Z pw:api => browserContext.close started
+2026-04-14T18:35:07.113Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:07.118Z pw:api => browser.newContext started
+2026-04-14T18:35:07.136Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:07.136Z pw:api => browserContext.newPage started
+2026-04-14T18:35:07.211Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:07.214Z pw:api => page.goto started
+2026-04-14T18:35:07.214Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:07.271Z pw:api   "commit" event fired
+2026-04-14T18:35:07.271Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:07.468Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:07.588Z pw:api   "load" event fired
+2026-04-14T18:35:07.589Z pw:api <= page.goto succeeded
+2026-04-14T18:35:07.589Z pw:api => locator.fill started
+2026-04-14T18:35:07.590Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:07.615Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:07.616Z pw:api   fill("standard_user")
+2026-04-14T18:35:07.616Z pw:api attempting fill action
+2026-04-14T18:35:07.616Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:07.627Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:07.628Z pw:api => locator.fill started
+2026-04-14T18:35:07.628Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:07.632Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:07.649Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:07.649Z pw:api attempting fill action
+2026-04-14T18:35:07.649Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:07.655Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:07.656Z pw:api => locator.click started
+2026-04-14T18:35:07.656Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:07.660Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:07.663Z pw:api attempting click action
+2026-04-14T18:35:07.663Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:07.701Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:07.701Z pw:api   scrolling into view if needed
+2026-04-14T18:35:07.716Z pw:api   done scrolling
+2026-04-14T18:35:07.719Z pw:api   performing click action
+2026-04-14T18:35:07.775Z pw:api   navigated to "https://www.saucedemo.com/inventory.html"
+2026-04-14T18:35:07.794Z pw:api   click action done
+2026-04-14T18:35:07.794Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:07.795Z pw:api   navigations have finished
+2026-04-14T18:35:07.796Z pw:api <= locator.click succeeded
+2026-04-14T18:35:07.797Z pw:api => frame._expect started
+2026-04-14T18:35:07.797Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:07.811Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:07.812Z pw:api => locator._expect started
+2026-04-14T18:35:07.812Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:07.812Z pw:api waiting for getByText('Products')
+2026-04-14T18:35:07.826Z pw:api   locator resolved to <span class="title" data-test="title">Products</span>
+2026-04-14T18:35:07.827Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:07.828Z pw:api => locator.click started
+2026-04-14T18:35:07.828Z pw:api waiting for locator('.inventory_item').filter({ has: getByText('Sauce Labs Bike Light') }).getByRole('button', { name: /Add to cart/i })
+2026-04-14T18:35:07.835Z pw:api   locator resolved to <button id="add-to-cart-sauce-labs-bike-light" name="add-to-cart-sauce-labs-bike-light" data-test="add-to-cart-sauce-labs-bike-light" class="btn btn_primary btn_small btn_inventory ">Add to cart</button>
+2026-04-14T18:35:07.837Z pw:api attempting click action
+2026-04-14T18:35:07.837Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:07.850Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:07.850Z pw:api   scrolling into view if needed
+2026-04-14T18:35:07.850Z pw:api   done scrolling
+2026-04-14T18:35:07.853Z pw:api   performing click action
+2026-04-14T18:35:07.880Z pw:api   click action done
+2026-04-14T18:35:07.880Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:07.884Z pw:api   navigations have finished
+2026-04-14T18:35:07.884Z pw:api <= locator.click succeeded
+2026-04-14T18:35:07.885Z pw:api => locator.click started
+2026-04-14T18:35:07.885Z pw:api waiting for locator('.shopping_cart_link')
+2026-04-14T18:35:07.889Z pw:api   locator resolved to <a class="shopping_cart_link" data-test="shopping-cart-link">…</a>
+2026-04-14T18:35:07.890Z pw:api attempting click action
+2026-04-14T18:35:07.890Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:07.917Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:07.917Z pw:api   scrolling into view if needed
+2026-04-14T18:35:07.918Z pw:api   done scrolling
+2026-04-14T18:35:07.920Z pw:api   performing click action
+2026-04-14T18:35:07.948Z pw:api   navigated to "https://www.saucedemo.com/cart.html"
+2026-04-14T18:35:07.954Z pw:api   click action done
+2026-04-14T18:35:07.954Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:07.955Z pw:api   navigations have finished
+2026-04-14T18:35:07.955Z pw:api <= locator.click succeeded
+2026-04-14T18:35:07.956Z pw:api => frame._expect started
+2026-04-14T18:35:07.956Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:07.959Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:07.960Z pw:api => locator._expect started
+2026-04-14T18:35:07.960Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:07.960Z pw:api waiting for locator('.cart_item').filter({ has: getByText('Sauce Labs Bike Light') })
+2026-04-14T18:35:07.962Z pw:api   locator resolved to <div class="cart_item" data-test="inventory-item">…</div>
+2026-04-14T18:35:07.963Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:07.963Z pw:api => locator._expect started
+2026-04-14T18:35:07.963Z pw:api Expect "to.have.text" with timeout 5000ms
+2026-04-14T18:35:07.964Z pw:api waiting for locator('.cart_item').filter({ has: getByText('Sauce Labs Bike Light') }).locator('.inventory_item_price')
+2026-04-14T18:35:07.966Z pw:api   locator resolved to <div class="inventory_item_price" data-test="inventory-item-price">$9.99</div>
+2026-04-14T18:35:07.966Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:07.968Z pw:api => page.close started
+2026-04-14T18:35:07.975Z pw:api <= page.close succeeded
+2026-04-14T18:35:07.977Z pw:api => browserContext.close started
+2026-04-14T18:35:07.984Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:07.987Z pw:api => browser.newContext started
+2026-04-14T18:35:07.999Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:07.999Z pw:api => browserContext.newPage started
+2026-04-14T18:35:08.116Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:08.118Z pw:api => page.goto started
+2026-04-14T18:35:08.119Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:08.151Z pw:api   "commit" event fired
+2026-04-14T18:35:08.151Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:08.371Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:08.456Z pw:api   "load" event fired
+2026-04-14T18:35:08.456Z pw:api <= page.goto succeeded
+2026-04-14T18:35:08.456Z pw:api => locator.fill started
+2026-04-14T18:35:08.457Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:08.479Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:08.481Z pw:api   fill("standard_user")
+2026-04-14T18:35:08.481Z pw:api attempting fill action
+2026-04-14T18:35:08.481Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:08.489Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:08.489Z pw:api => locator.fill started
+2026-04-14T18:35:08.489Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:08.499Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:08.502Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:08.502Z pw:api attempting fill action
+2026-04-14T18:35:08.502Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:08.520Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:08.520Z pw:api => locator.click started
+2026-04-14T18:35:08.520Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:08.526Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:08.527Z pw:api attempting click action
+2026-04-14T18:35:08.527Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:08.549Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:08.550Z pw:api   scrolling into view if needed
+2026-04-14T18:35:08.550Z pw:api   done scrolling
+2026-04-14T18:35:08.553Z pw:api   performing click action
+2026-04-14T18:35:08.596Z pw:api   navigated to "https://www.saucedemo.com/inventory.html"
+2026-04-14T18:35:08.636Z pw:api   click action done
+2026-04-14T18:35:08.636Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:08.638Z pw:api   navigations have finished
+2026-04-14T18:35:08.638Z pw:api <= locator.click succeeded
+2026-04-14T18:35:08.639Z pw:api => frame._expect started
+2026-04-14T18:35:08.639Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:08.641Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:08.641Z pw:api => locator._expect started
+2026-04-14T18:35:08.642Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:08.642Z pw:api waiting for getByText('Products')
+2026-04-14T18:35:08.646Z pw:api   locator resolved to <span class="title" data-test="title">Products</span>
+2026-04-14T18:35:08.647Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:08.647Z pw:api => locator.click started
+2026-04-14T18:35:08.648Z pw:api waiting for locator('.inventory_item').filter({ has: getByText('Sauce Labs Backpack') }).getByRole('button', { name: /Add to cart/i })
+2026-04-14T18:35:08.653Z pw:api   locator resolved to <button id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" data-test="add-to-cart-sauce-labs-backpack" class="btn btn_primary btn_small btn_inventory ">Add to cart</button>
+2026-04-14T18:35:08.654Z pw:api attempting click action
+2026-04-14T18:35:08.654Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:08.684Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:08.684Z pw:api   scrolling into view if needed
+2026-04-14T18:35:08.685Z pw:api   done scrolling
+2026-04-14T18:35:08.688Z pw:api   performing click action
+2026-04-14T18:35:08.693Z pw:api   click action done
+2026-04-14T18:35:08.694Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:08.695Z pw:api   navigations have finished
+2026-04-14T18:35:08.695Z pw:api <= locator.click succeeded
+2026-04-14T18:35:08.696Z pw:api => locator.click started
+2026-04-14T18:35:08.696Z pw:api waiting for locator('.shopping_cart_link')
+2026-04-14T18:35:08.717Z pw:api   locator resolved to <a class="shopping_cart_link" data-test="shopping-cart-link">…</a>
+2026-04-14T18:35:08.719Z pw:api attempting click action
+2026-04-14T18:35:08.719Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:08.734Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:08.734Z pw:api   scrolling into view if needed
+2026-04-14T18:35:08.735Z pw:api   done scrolling
+2026-04-14T18:35:08.739Z pw:api   performing click action
+2026-04-14T18:35:08.763Z pw:api   navigated to "https://www.saucedemo.com/cart.html"
+2026-04-14T18:35:08.768Z pw:api   click action done
+2026-04-14T18:35:08.768Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:08.771Z pw:api   navigations have finished
+2026-04-14T18:35:08.771Z pw:api <= locator.click succeeded
+2026-04-14T18:35:08.772Z pw:api => frame._expect started
+2026-04-14T18:35:08.772Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:08.775Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:08.776Z pw:api => locator.click started
+2026-04-14T18:35:08.776Z pw:api waiting for getByRole('button', { name: 'Checkout' })
+2026-04-14T18:35:08.780Z pw:api   locator resolved to <button id="checkout" name="checkout" data-test="checkout" class="btn btn_action btn_medium checkout_button ">Checkout</button>
+2026-04-14T18:35:08.781Z pw:api attempting click action
+2026-04-14T18:35:08.781Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:08.799Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:08.799Z pw:api   scrolling into view if needed
+2026-04-14T18:35:08.800Z pw:api   done scrolling
+2026-04-14T18:35:08.802Z pw:api   performing click action
+2026-04-14T18:35:08.814Z pw:api   navigated to "https://www.saucedemo.com/checkout-step-one.html"
+2026-04-14T18:35:08.823Z pw:api   click action done
+2026-04-14T18:35:08.823Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:08.826Z pw:api   navigations have finished
+2026-04-14T18:35:08.826Z pw:api <= locator.click succeeded
+2026-04-14T18:35:08.827Z pw:api => frame._expect started
+2026-04-14T18:35:08.828Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:08.829Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:08.830Z pw:api => frame._expect started
+2026-04-14T18:35:08.830Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:08.832Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:08.832Z pw:api => locator.fill started
+2026-04-14T18:35:08.832Z pw:api waiting for getByPlaceholder('First Name')
+2026-04-14T18:35:08.836Z pw:api   locator resolved to <input value="" type="text" id="first-name" name="firstName" autocorrect="off" data-test="firstName" autocapitalize="none" placeholder="First Name" class="input_error form_input"/>
+2026-04-14T18:35:08.837Z pw:api   fill("Juan")
+2026-04-14T18:35:08.837Z pw:api attempting fill action
+2026-04-14T18:35:08.837Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:08.842Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:08.843Z pw:api => locator.fill started
+2026-04-14T18:35:08.843Z pw:api waiting for getByPlaceholder('Last Name')
+2026-04-14T18:35:08.845Z pw:api   locator resolved to <input value="" type="text" id="last-name" name="lastName" autocorrect="off" data-test="lastName" autocapitalize="none" placeholder="Last Name" class="input_error form_input"/>
+2026-04-14T18:35:08.846Z pw:api   fill("Pérez")
+2026-04-14T18:35:08.846Z pw:api attempting fill action
+2026-04-14T18:35:08.846Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:08.851Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:08.852Z pw:api => locator.fill started
+2026-04-14T18:35:08.852Z pw:api waiting for getByPlaceholder('Zip/Postal Code')
+2026-04-14T18:35:08.855Z pw:api   locator resolved to <input value="" type="text" id="postal-code" name="postalCode" autocorrect="off" autocapitalize="none" data-test="postalCode" placeholder="Zip/Postal Code" class="input_error form_input"/>
+2026-04-14T18:35:08.857Z pw:api   fill("5000")
+2026-04-14T18:35:08.857Z pw:api attempting fill action
+2026-04-14T18:35:08.857Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:08.862Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:08.863Z pw:api => locator.click started
+2026-04-14T18:35:08.863Z pw:api waiting for getByRole('button', { name: 'Continue' })
+2026-04-14T18:35:08.866Z pw:api   locator resolved to <input type="submit" id="continue" name="continue" value="Continue" data-test="continue" class="submit-button btn btn_primary cart_button btn_action"/>
+2026-04-14T18:35:08.868Z pw:api attempting click action
+2026-04-14T18:35:08.869Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:08.900Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:08.900Z pw:api   scrolling into view if needed
+2026-04-14T18:35:08.901Z pw:api   done scrolling
+2026-04-14T18:35:08.904Z pw:api   performing click action
+2026-04-14T18:35:08.910Z pw:api   navigated to "https://www.saucedemo.com/checkout-step-two.html"
+2026-04-14T18:35:08.920Z pw:api   click action done
+2026-04-14T18:35:08.920Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:08.922Z pw:api   navigations have finished
+2026-04-14T18:35:08.923Z pw:api <= locator.click succeeded
+2026-04-14T18:35:08.923Z pw:api => frame._expect started
+2026-04-14T18:35:08.923Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:08.926Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:08.927Z pw:api => locator.click started
+2026-04-14T18:35:08.927Z pw:api waiting for getByRole('button', { name: 'Finish' })
+2026-04-14T18:35:08.930Z pw:api   locator resolved to <button id="finish" name="finish" data-test="finish" class="btn btn_action btn_medium cart_button">Finish</button>
+2026-04-14T18:35:08.931Z pw:api attempting click action
+2026-04-14T18:35:08.931Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:08.949Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:08.949Z pw:api   scrolling into view if needed
+2026-04-14T18:35:08.950Z pw:api   done scrolling
+2026-04-14T18:35:08.952Z pw:api   performing click action
+2026-04-14T18:35:08.960Z pw:api   navigated to "https://www.saucedemo.com/checkout-complete.html"
+2026-04-14T18:35:08.961Z pw:api   click action done
+2026-04-14T18:35:08.961Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:08.962Z pw:api   navigations have finished
+2026-04-14T18:35:08.962Z pw:api <= locator.click succeeded
+2026-04-14T18:35:08.963Z pw:api => frame._expect started
+2026-04-14T18:35:08.963Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:08.973Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:08.974Z pw:api => locator._expect started
+2026-04-14T18:35:08.974Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:08.974Z pw:api waiting for getByRole('heading', { name: 'Thank you for your order!', exact: true })
+2026-04-14T18:35:08.977Z pw:api   locator resolved to <h2 class="complete-header" data-test="complete-header">Thank you for your order!</h2>
+2026-04-14T18:35:08.977Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:08.979Z pw:api => page.close started
+2026-04-14T18:35:09.016Z pw:api <= page.close succeeded
+2026-04-14T18:35:09.017Z pw:api => browserContext.close started
+2026-04-14T18:35:09.023Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:09.025Z pw:api => browser.newContext started
+2026-04-14T18:35:09.058Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:09.058Z pw:api => browserContext.newPage started
+2026-04-14T18:35:09.127Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:09.130Z pw:api => page.goto started
+2026-04-14T18:35:09.130Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:09.201Z pw:api   "commit" event fired
+2026-04-14T18:35:09.201Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:09.361Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:09.457Z pw:api   "load" event fired
+2026-04-14T18:35:09.458Z pw:api <= page.goto succeeded
+2026-04-14T18:35:09.459Z pw:api => locator.fill started
+2026-04-14T18:35:09.459Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:09.487Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:09.488Z pw:api   fill("standard_user")
+2026-04-14T18:35:09.488Z pw:api attempting fill action
+2026-04-14T18:35:09.488Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:09.499Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:09.499Z pw:api => locator.fill started
+2026-04-14T18:35:09.499Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:09.516Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:09.517Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:09.517Z pw:api attempting fill action
+2026-04-14T18:35:09.517Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:09.522Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:09.523Z pw:api => locator.click started
+2026-04-14T18:35:09.523Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:09.528Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:09.529Z pw:api attempting click action
+2026-04-14T18:35:09.529Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:09.549Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:09.549Z pw:api   scrolling into view if needed
+2026-04-14T18:35:09.550Z pw:api   done scrolling
+2026-04-14T18:35:09.553Z pw:api   performing click action
+2026-04-14T18:35:09.594Z pw:api   navigated to "https://www.saucedemo.com/inventory.html"
+2026-04-14T18:35:09.865Z pw:api   click action done
+2026-04-14T18:35:09.865Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:09.881Z pw:api   navigations have finished
+2026-04-14T18:35:09.881Z pw:api <= locator.click succeeded
+2026-04-14T18:35:09.882Z pw:api => locator.count started
+2026-04-14T18:35:09.885Z pw:api <= locator.count succeeded
+2026-04-14T18:35:09.885Z pw:api => locator.click started
+2026-04-14T18:35:09.885Z pw:api waiting for locator('.inventory_item').first().getByRole('button', { name: /Add to cart/i })
+2026-04-14T18:35:09.889Z pw:api   locator resolved to <button id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" data-test="add-to-cart-sauce-labs-backpack" class="btn btn_primary btn_small btn_inventory ">Add to cart</button>
+2026-04-14T18:35:09.890Z pw:api attempting click action
+2026-04-14T18:35:09.890Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:10.002Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:10.002Z pw:api   scrolling into view if needed
+2026-04-14T18:35:10.042Z pw:api   done scrolling
+2026-04-14T18:35:10.053Z pw:api   performing click action
+2026-04-14T18:35:10.064Z pw:api   click action done
+2026-04-14T18:35:10.064Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:10.065Z pw:api   navigations have finished
+2026-04-14T18:35:10.065Z pw:api <= locator.click succeeded
+2026-04-14T18:35:10.066Z pw:api => locator.click started
+2026-04-14T18:35:10.066Z pw:api waiting for locator('.inventory_item').nth(1).getByRole('button', { name: /Add to cart/i })
+2026-04-14T18:35:10.072Z pw:api   locator resolved to <button id="add-to-cart-sauce-labs-bike-light" name="add-to-cart-sauce-labs-bike-light" data-test="add-to-cart-sauce-labs-bike-light" class="btn btn_primary btn_small btn_inventory ">Add to cart</button>
+2026-04-14T18:35:10.073Z pw:api attempting click action
+2026-04-14T18:35:10.073Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:10.083Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:10.083Z pw:api   scrolling into view if needed
+2026-04-14T18:35:10.084Z pw:api   done scrolling
+2026-04-14T18:35:10.086Z pw:api   performing click action
+2026-04-14T18:35:10.091Z pw:api   click action done
+2026-04-14T18:35:10.091Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:10.092Z pw:api   navigations have finished
+2026-04-14T18:35:10.092Z pw:api <= locator.click succeeded
+2026-04-14T18:35:10.093Z pw:api => locator.click started
+2026-04-14T18:35:10.093Z pw:api waiting for locator('.shopping_cart_link')
+2026-04-14T18:35:10.095Z pw:api   locator resolved to <a class="shopping_cart_link" data-test="shopping-cart-link">…</a>
+2026-04-14T18:35:10.096Z pw:api attempting click action
+2026-04-14T18:35:10.097Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:10.121Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:10.121Z pw:api   scrolling into view if needed
+2026-04-14T18:35:10.122Z pw:api   done scrolling
+2026-04-14T18:35:10.124Z pw:api   performing click action
+2026-04-14T18:35:10.129Z pw:api   navigated to "https://www.saucedemo.com/cart.html"
+2026-04-14T18:35:10.142Z pw:api   click action done
+2026-04-14T18:35:10.142Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:10.143Z pw:api   navigations have finished
+2026-04-14T18:35:10.143Z pw:api <= locator.click succeeded
+2026-04-14T18:35:10.144Z pw:api => frame._expect started
+2026-04-14T18:35:10.144Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:10.146Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:10.146Z pw:api => locator.click started
+2026-04-14T18:35:10.146Z pw:api waiting for getByRole('button', { name: 'Checkout' })
+2026-04-14T18:35:10.152Z pw:api   locator resolved to <button id="checkout" name="checkout" data-test="checkout" class="btn btn_action btn_medium checkout_button ">Checkout</button>
+2026-04-14T18:35:10.153Z pw:api attempting click action
+2026-04-14T18:35:10.153Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:10.182Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:10.183Z pw:api   scrolling into view if needed
+2026-04-14T18:35:10.198Z pw:api   done scrolling
+2026-04-14T18:35:10.200Z pw:api   performing click action
+2026-04-14T18:35:10.206Z pw:api   navigated to "https://www.saucedemo.com/checkout-step-one.html"
+2026-04-14T18:35:10.209Z pw:api   click action done
+2026-04-14T18:35:10.209Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:10.210Z pw:api   navigations have finished
+2026-04-14T18:35:10.210Z pw:api <= locator.click succeeded
+2026-04-14T18:35:10.211Z pw:api => frame._expect started
+2026-04-14T18:35:10.212Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:10.213Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:10.215Z pw:api => frame._expect started
+2026-04-14T18:35:10.215Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:10.217Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:10.218Z pw:api => locator.fill started
+2026-04-14T18:35:10.218Z pw:api waiting for getByPlaceholder('First Name')
+2026-04-14T18:35:10.220Z pw:api   locator resolved to <input value="" type="text" id="first-name" name="firstName" autocorrect="off" data-test="firstName" autocapitalize="none" placeholder="First Name" class="input_error form_input"/>
+2026-04-14T18:35:10.221Z pw:api   fill("Ana")
+2026-04-14T18:35:10.221Z pw:api attempting fill action
+2026-04-14T18:35:10.221Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:10.226Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:10.226Z pw:api => locator.fill started
+2026-04-14T18:35:10.227Z pw:api waiting for getByPlaceholder('Last Name')
+2026-04-14T18:35:10.230Z pw:api   locator resolved to <input value="" type="text" id="last-name" name="lastName" autocorrect="off" data-test="lastName" autocapitalize="none" placeholder="Last Name" class="input_error form_input"/>
+2026-04-14T18:35:10.231Z pw:api   fill("Gómez")
+2026-04-14T18:35:10.231Z pw:api attempting fill action
+2026-04-14T18:35:10.231Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:10.237Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:10.237Z pw:api => locator.fill started
+2026-04-14T18:35:10.237Z pw:api waiting for getByPlaceholder('Zip/Postal Code')
+2026-04-14T18:35:10.239Z pw:api   locator resolved to <input value="" type="text" id="postal-code" name="postalCode" autocorrect="off" autocapitalize="none" data-test="postalCode" placeholder="Zip/Postal Code" class="input_error form_input"/>
+2026-04-14T18:35:10.240Z pw:api   fill("2000")
+2026-04-14T18:35:10.240Z pw:api attempting fill action
+2026-04-14T18:35:10.240Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:10.246Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:10.247Z pw:api => locator.click started
+2026-04-14T18:35:10.247Z pw:api waiting for getByRole('button', { name: 'Continue' })
+2026-04-14T18:35:10.250Z pw:api   locator resolved to <input type="submit" id="continue" name="continue" value="Continue" data-test="continue" class="submit-button btn btn_primary cart_button btn_action"/>
+2026-04-14T18:35:10.251Z pw:api attempting click action
+2026-04-14T18:35:10.251Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:10.283Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:10.283Z pw:api   scrolling into view if needed
+2026-04-14T18:35:10.283Z pw:api   done scrolling
+2026-04-14T18:35:10.285Z pw:api   performing click action
+2026-04-14T18:35:10.289Z pw:api   navigated to "https://www.saucedemo.com/checkout-step-two.html"
+2026-04-14T18:35:10.302Z pw:api   click action done
+2026-04-14T18:35:10.302Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:10.304Z pw:api   navigations have finished
+2026-04-14T18:35:10.304Z pw:api <= locator.click succeeded
+2026-04-14T18:35:10.305Z pw:api => frame._expect started
+2026-04-14T18:35:10.305Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:10.307Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:10.308Z pw:api => frame._expect started
+2026-04-14T18:35:10.308Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:10.310Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:10.311Z pw:api => locator.allTextContents started
+2026-04-14T18:35:10.330Z pw:api <= locator.allTextContents succeeded
+2026-04-14T18:35:10.331Z pw:api => locator._expect started
+2026-04-14T18:35:10.337Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:10.337Z pw:api waiting for locator('.summary_subtotal_label')
+2026-04-14T18:35:10.339Z pw:api   locator resolved to <div data-test="subtotal-label" class="summary_subtotal_label">Item total: $39.98</div>
+2026-04-14T18:35:10.339Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:10.339Z pw:api => locator.textContent started
+2026-04-14T18:35:10.340Z pw:api waiting for locator('.summary_subtotal_label')
+2026-04-14T18:35:10.343Z pw:api   locator resolved to <div data-test="subtotal-label" class="summary_subtotal_label">Item total: $39.98</div>
+2026-04-14T18:35:10.343Z pw:api <= locator.textContent succeeded
+2026-04-14T18:35:10.344Z pw:api => page.close started
+2026-04-14T18:35:10.355Z pw:api <= page.close succeeded
+2026-04-14T18:35:10.356Z pw:api => browserContext.close started
+2026-04-14T18:35:10.367Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:10.370Z pw:api => browser.newContext started
+2026-04-14T18:35:10.379Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:10.379Z pw:api => browserContext.newPage started
+2026-04-14T18:35:10.480Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:10.482Z pw:api => page.goto started
+2026-04-14T18:35:10.483Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:10.514Z pw:api   "commit" event fired
+2026-04-14T18:35:10.514Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:10.712Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:10.776Z pw:api   "load" event fired
+2026-04-14T18:35:10.777Z pw:api <= page.goto succeeded
+2026-04-14T18:35:10.778Z pw:api => locator.fill started
+2026-04-14T18:35:10.778Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:10.816Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:10.828Z pw:api   fill("standard_user")
+2026-04-14T18:35:10.828Z pw:api attempting fill action
+2026-04-14T18:35:10.828Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:10.841Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:10.842Z pw:api => locator.fill started
+2026-04-14T18:35:10.842Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:10.852Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:10.853Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:10.853Z pw:api attempting fill action
+2026-04-14T18:35:10.853Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:10.857Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:10.858Z pw:api => locator.click started
+2026-04-14T18:35:10.858Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:10.863Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:10.864Z pw:api attempting click action
+2026-04-14T18:35:10.864Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:10.883Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:10.883Z pw:api   scrolling into view if needed
+2026-04-14T18:35:10.883Z pw:api   done scrolling
+2026-04-14T18:35:10.886Z pw:api   performing click action
+2026-04-14T18:35:10.936Z pw:api   navigated to "https://www.saucedemo.com/inventory.html"
+2026-04-14T18:35:10.990Z pw:api   click action done
+2026-04-14T18:35:10.990Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:10.990Z pw:api   navigations have finished
+2026-04-14T18:35:10.990Z pw:api <= locator.click succeeded
+2026-04-14T18:35:10.991Z pw:api => frame._expect started
+2026-04-14T18:35:10.992Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:10.995Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:10.995Z pw:api => locator._expect started
+2026-04-14T18:35:10.995Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:10.995Z pw:api waiting for getByText('Products')
+2026-04-14T18:35:10.998Z pw:api   locator resolved to <span class="title" data-test="title">Products</span>
+2026-04-14T18:35:10.998Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:10.999Z pw:api => locator._expect started
+2026-04-14T18:35:11.000Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:11.000Z pw:api waiting for locator('.inventory_container')
+2026-04-14T18:35:11.002Z pw:api   locator resolved to <div id="inventory_container" class="inventory_container" data-test="inventory-container">…</div>
+2026-04-14T18:35:11.002Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:11.003Z pw:api => page.close started
+2026-04-14T18:35:11.010Z pw:api <= page.close succeeded
+2026-04-14T18:35:11.011Z pw:api => browserContext.close started
+2026-04-14T18:35:11.043Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:11.047Z pw:api => browser.newContext started
+2026-04-14T18:35:11.054Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:11.054Z pw:api => browserContext.newPage started
+2026-04-14T18:35:11.132Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:11.136Z pw:api => page.goto started
+2026-04-14T18:35:11.136Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:11.168Z pw:api   "commit" event fired
+2026-04-14T18:35:11.168Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:11.386Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:11.443Z pw:api   "load" event fired
+2026-04-14T18:35:11.443Z pw:api <= page.goto succeeded
+2026-04-14T18:35:11.444Z pw:api => locator.fill started
+2026-04-14T18:35:11.444Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:11.484Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:11.486Z pw:api   fill("")
+2026-04-14T18:35:11.486Z pw:api attempting fill action
+2026-04-14T18:35:11.486Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:11.495Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:11.495Z pw:api => locator.fill started
+2026-04-14T18:35:11.495Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:11.499Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:11.501Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:11.501Z pw:api attempting fill action
+2026-04-14T18:35:11.501Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:11.512Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:11.513Z pw:api => locator.click started
+2026-04-14T18:35:11.513Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:11.520Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:11.521Z pw:api attempting click action
+2026-04-14T18:35:11.521Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:11.566Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:11.566Z pw:api   scrolling into view if needed
+2026-04-14T18:35:11.566Z pw:api   done scrolling
+2026-04-14T18:35:11.573Z pw:api   performing click action
+2026-04-14T18:35:11.586Z pw:api   click action done
+2026-04-14T18:35:11.586Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:11.587Z pw:api   navigations have finished
+2026-04-14T18:35:11.587Z pw:api <= locator.click succeeded
+2026-04-14T18:35:11.588Z pw:api => locator._expect started
+2026-04-14T18:35:11.588Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:11.588Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:11.591Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:11.591Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:11.592Z pw:api => locator._expect started
+2026-04-14T18:35:11.593Z pw:api Expect "to.have.text" with timeout 5000ms
+2026-04-14T18:35:11.593Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:11.599Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:11.599Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:11.600Z pw:api => frame._expect started
+2026-04-14T18:35:11.600Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:11.602Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:11.603Z pw:api => locator._expect started
+2026-04-14T18:35:11.603Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:11.603Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:11.606Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:11.606Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:11.607Z pw:api => page.close started
+2026-04-14T18:35:11.648Z pw:api <= page.close succeeded
+2026-04-14T18:35:11.648Z pw:api => browserContext.close started
+2026-04-14T18:35:11.653Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:11.656Z pw:api => browser.newContext started
+2026-04-14T18:35:11.669Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:11.669Z pw:api => browserContext.newPage started
+2026-04-14T18:35:11.760Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:11.762Z pw:api => page.goto started
+2026-04-14T18:35:11.762Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:11.822Z pw:api   "commit" event fired
+2026-04-14T18:35:11.822Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:12.006Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:12.108Z pw:api   "load" event fired
+2026-04-14T18:35:12.108Z pw:api <= page.goto succeeded
+2026-04-14T18:35:12.109Z pw:api => locator.fill started
+2026-04-14T18:35:12.109Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:12.139Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:12.140Z pw:api   fill("standard_user")
+2026-04-14T18:35:12.140Z pw:api attempting fill action
+2026-04-14T18:35:12.140Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:12.152Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:12.152Z pw:api => locator.fill started
+2026-04-14T18:35:12.152Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:12.157Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:12.158Z pw:api   fill("")
+2026-04-14T18:35:12.158Z pw:api attempting fill action
+2026-04-14T18:35:12.158Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:12.164Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:12.165Z pw:api => locator.click started
+2026-04-14T18:35:12.165Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:12.186Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:12.187Z pw:api attempting click action
+2026-04-14T18:35:12.187Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:12.200Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:12.200Z pw:api   scrolling into view if needed
+2026-04-14T18:35:12.201Z pw:api   done scrolling
+2026-04-14T18:35:12.204Z pw:api   performing click action
+2026-04-14T18:35:12.215Z pw:api   click action done
+2026-04-14T18:35:12.215Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:12.217Z pw:api   navigations have finished
+2026-04-14T18:35:12.218Z pw:api <= locator.click succeeded
+2026-04-14T18:35:12.219Z pw:api => locator._expect started
+2026-04-14T18:35:12.219Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:12.219Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:12.222Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:12.222Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:12.223Z pw:api => locator._expect started
+2026-04-14T18:35:12.223Z pw:api Expect "to.have.text" with timeout 5000ms
+2026-04-14T18:35:12.223Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:12.233Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:12.233Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:12.234Z pw:api => frame._expect started
+2026-04-14T18:35:12.234Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:12.236Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:12.236Z pw:api => locator._expect started
+2026-04-14T18:35:12.236Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:12.236Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:12.238Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:12.238Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:12.240Z pw:api => page.close started
+2026-04-14T18:35:12.246Z pw:api <= page.close succeeded
+2026-04-14T18:35:12.247Z pw:api => browserContext.close started
+2026-04-14T18:35:12.266Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:12.270Z pw:api => browser.newContext started
+2026-04-14T18:35:12.301Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:12.302Z pw:api => browserContext.newPage started
+2026-04-14T18:35:12.387Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:12.389Z pw:api => page.goto started
+2026-04-14T18:35:12.389Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:12.440Z pw:api   "commit" event fired
+2026-04-14T18:35:12.440Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:12.672Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:12.710Z pw:api   "load" event fired
+2026-04-14T18:35:12.710Z pw:api <= page.goto succeeded
+2026-04-14T18:35:12.711Z pw:api => locator.fill started
+2026-04-14T18:35:12.711Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:12.741Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:12.748Z pw:api   fill("locked_out_user")
+2026-04-14T18:35:12.748Z pw:api attempting fill action
+2026-04-14T18:35:12.748Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:12.757Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:12.758Z pw:api => locator.fill started
+2026-04-14T18:35:12.758Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:12.767Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:12.769Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:12.769Z pw:api attempting fill action
+2026-04-14T18:35:12.769Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:12.776Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:12.776Z pw:api => locator.click started
+2026-04-14T18:35:12.776Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:12.782Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:12.787Z pw:api attempting click action
+2026-04-14T18:35:12.787Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:12.825Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:12.825Z pw:api   scrolling into view if needed
+2026-04-14T18:35:12.833Z pw:api   done scrolling
+2026-04-14T18:35:12.836Z pw:api   performing click action
+2026-04-14T18:35:12.855Z pw:api   click action done
+2026-04-14T18:35:12.855Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:12.856Z pw:api   navigations have finished
+2026-04-14T18:35:12.857Z pw:api <= locator.click succeeded
+2026-04-14T18:35:12.858Z pw:api => locator._expect started
+2026-04-14T18:35:12.858Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:12.858Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:12.862Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:12.862Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:12.862Z pw:api => locator._expect started
+2026-04-14T18:35:12.863Z pw:api Expect "to.have.text" with timeout 5000ms
+2026-04-14T18:35:12.863Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:12.864Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:12.864Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:12.865Z pw:api => frame._expect started
+2026-04-14T18:35:12.866Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:12.867Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:12.867Z pw:api => locator._expect started
+2026-04-14T18:35:12.868Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:12.868Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:12.873Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:12.873Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:12.875Z pw:api => page.close started
+2026-04-14T18:35:12.884Z pw:api <= page.close succeeded
+2026-04-14T18:35:12.884Z pw:api => browserContext.close started
+2026-04-14T18:35:12.889Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:12.893Z pw:api => browser.newContext started
+2026-04-14T18:35:12.912Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:12.912Z pw:api => browserContext.newPage started
+2026-04-14T18:35:13.024Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:13.027Z pw:api => page.goto started
+2026-04-14T18:35:13.027Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:13.064Z pw:api   "commit" event fired
+2026-04-14T18:35:13.064Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:13.284Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:13.362Z pw:api   "load" event fired
+2026-04-14T18:35:13.363Z pw:api <= page.goto succeeded
+2026-04-14T18:35:13.364Z pw:api => locator.fill started
+2026-04-14T18:35:13.364Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:13.396Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:13.397Z pw:api   fill("usuario_fake")
+2026-04-14T18:35:13.397Z pw:api attempting fill action
+2026-04-14T18:35:13.397Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:13.410Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:13.411Z pw:api => locator.fill started
+2026-04-14T18:35:13.411Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:13.421Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:13.423Z pw:api   fill("secret_sauce")
+2026-04-14T18:35:13.423Z pw:api attempting fill action
+2026-04-14T18:35:13.423Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:13.434Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:13.435Z pw:api => locator.click started
+2026-04-14T18:35:13.435Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:13.440Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:13.441Z pw:api attempting click action
+2026-04-14T18:35:13.441Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:13.470Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:13.470Z pw:api   scrolling into view if needed
+2026-04-14T18:35:13.478Z pw:api   done scrolling
+2026-04-14T18:35:13.481Z pw:api   performing click action
+2026-04-14T18:35:13.499Z pw:api   click action done
+2026-04-14T18:35:13.499Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:13.500Z pw:api   navigations have finished
+2026-04-14T18:35:13.500Z pw:api <= locator.click succeeded
+2026-04-14T18:35:13.501Z pw:api => locator._expect started
+2026-04-14T18:35:13.501Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:13.501Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:13.504Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:13.504Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:13.505Z pw:api => locator._expect started
+2026-04-14T18:35:13.505Z pw:api Expect "to.have.text" with timeout 5000ms
+2026-04-14T18:35:13.505Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:13.522Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:13.522Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:13.523Z pw:api => frame._expect started
+2026-04-14T18:35:13.524Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:13.527Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:13.527Z pw:api => locator._expect started
+2026-04-14T18:35:13.527Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:13.528Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:13.530Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:13.530Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:13.531Z pw:api => page.close started
+2026-04-14T18:35:13.538Z pw:api <= page.close succeeded
+2026-04-14T18:35:13.539Z pw:api => browserContext.close started
+2026-04-14T18:35:13.546Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:13.549Z pw:api => browser.newContext started
+2026-04-14T18:35:13.568Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:13.568Z pw:api => browserContext.newPage started
+2026-04-14T18:35:13.659Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:13.661Z pw:api => page.goto started
+2026-04-14T18:35:13.661Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:13.693Z pw:api   "commit" event fired
+2026-04-14T18:35:13.693Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:13.902Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:14.023Z pw:api   "load" event fired
+2026-04-14T18:35:14.023Z pw:api <= page.goto succeeded
+2026-04-14T18:35:14.024Z pw:api => locator.fill started
+2026-04-14T18:35:14.024Z pw:api waiting for getByPlaceholder('Username')
+2026-04-14T18:35:14.074Z pw:api   locator resolved to <input value="" type="text" id="user-name" name="user-name" autocorrect="off" data-test="username" autocapitalize="none" placeholder="Username" class="input_error form_input"/>
+2026-04-14T18:35:14.076Z pw:api   fill("standard_user")
+2026-04-14T18:35:14.076Z pw:api attempting fill action
+2026-04-14T18:35:14.076Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:14.084Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:14.084Z pw:api => locator.fill started
+2026-04-14T18:35:14.085Z pw:api waiting for getByPlaceholder('Password')
+2026-04-14T18:35:14.088Z pw:api   locator resolved to <input value="" id="password" type="password" name="password" autocorrect="off" data-test="password" autocapitalize="none" placeholder="Password" class="input_error form_input"/>
+2026-04-14T18:35:14.089Z pw:api   fill("wrong_pass")
+2026-04-14T18:35:14.089Z pw:api attempting fill action
+2026-04-14T18:35:14.090Z pw:api   waiting for element to be visible, enabled and editable
+2026-04-14T18:35:14.096Z pw:api <= locator.fill succeeded
+2026-04-14T18:35:14.097Z pw:api => locator.click started
+2026-04-14T18:35:14.097Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:14.106Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:14.108Z pw:api attempting click action
+2026-04-14T18:35:14.108Z pw:api   waiting for element to be visible, enabled and stable
+2026-04-14T18:35:14.133Z pw:api   element is visible, enabled and stable
+2026-04-14T18:35:14.133Z pw:api   scrolling into view if needed
+2026-04-14T18:35:14.133Z pw:api   done scrolling
+2026-04-14T18:35:14.136Z pw:api   performing click action
+2026-04-14T18:35:14.154Z pw:api   click action done
+2026-04-14T18:35:14.154Z pw:api   waiting for scheduled navigations to finish
+2026-04-14T18:35:14.154Z pw:api   navigations have finished
+2026-04-14T18:35:14.155Z pw:api <= locator.click succeeded
+2026-04-14T18:35:14.155Z pw:api => locator._expect started
+2026-04-14T18:35:14.156Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:14.156Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:14.159Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:14.159Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:14.160Z pw:api => locator._expect started
+2026-04-14T18:35:14.160Z pw:api Expect "to.have.text" with timeout 5000ms
+2026-04-14T18:35:14.160Z pw:api waiting for getByText(/^Epic sadface:/)
+2026-04-14T18:35:14.163Z pw:api   locator resolved to <h3 data-test="error">…</h3>
+2026-04-14T18:35:14.164Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:14.164Z pw:api => frame._expect started
+2026-04-14T18:35:14.165Z pw:api Expect "to.have.url" with timeout 5000ms
+2026-04-14T18:35:14.166Z pw:api <= frame._expect succeeded
+2026-04-14T18:35:14.167Z pw:api => locator._expect started
+2026-04-14T18:35:14.167Z pw:api Expect "to.be.visible" with timeout 5000ms
+2026-04-14T18:35:14.168Z pw:api waiting for getByRole('button', { name: 'Login' })
+2026-04-14T18:35:14.170Z pw:api   locator resolved to <input type="submit" value="Login" id="login-button" name="login-button" data-test="login-button" class="submit-button btn_action"/>
+2026-04-14T18:35:14.170Z pw:api <= locator._expect succeeded
+2026-04-14T18:35:14.172Z pw:api => page.close started
+2026-04-14T18:35:14.179Z pw:api <= page.close succeeded
+2026-04-14T18:35:14.180Z pw:api => browserContext.close started
+2026-04-14T18:35:14.200Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:14.203Z pw:api => browser.newContext started
+2026-04-14T18:35:14.210Z pw:api <= browser.newContext succeeded
+2026-04-14T18:35:14.210Z pw:api => browserContext.newPage started
+2026-04-14T18:35:14.311Z pw:api <= browserContext.newPage succeeded
+2026-04-14T18:35:14.313Z pw:api => page.goto started
+2026-04-14T18:35:14.313Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:14.384Z pw:api   "commit" event fired
+2026-04-14T18:35:14.384Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:14.570Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:14.642Z pw:api   "load" event fired
+2026-04-14T18:35:14.642Z pw:api <= page.goto succeeded
+2026-04-14T18:35:14.643Z pw:api => page.goto started
+2026-04-14T18:35:14.643Z pw:api navigating to "https://www.saucedemo.com/", waiting until "load"
+2026-04-14T18:35:14.654Z pw:api   "commit" event fired
+2026-04-14T18:35:14.654Z pw:api   navigated to "https://www.saucedemo.com/"
+2026-04-14T18:35:14.698Z pw:api   "domcontentloaded" event fired
+2026-04-14T18:35:14.699Z pw:api   "load" event fired
+2026-04-14T18:35:14.699Z pw:api <= page.goto succeeded
+2026-04-14T18:35:14.702Z pw:api => page.screenshot started
+2026-04-14T18:35:14.703Z pw:api taking page screenshot
+2026-04-14T18:35:14.710Z pw:api waiting for fonts to load...
+2026-04-14T18:35:14.712Z pw:api fonts loaded
+2026-04-14T18:35:14.800Z pw:api <= page.screenshot succeeded
+2026-04-14T18:35:14.802Z pw:api => page.close started
+2026-04-14T18:35:14.807Z pw:api <= page.close succeeded
+2026-04-14T18:35:14.808Z pw:api => browserContext.close started
+2026-04-14T18:35:14.813Z pw:api <= browserContext.close succeeded
+2026-04-14T18:35:14.816Z pw:api => browser.close started
+2026-04-14T18:35:14.988Z pw:api <= browser.close succeeded

@@ -1,6 +1,8 @@
 import { BeforeAll, AfterAll, Before, After, Status, setDefaultTimeout } from '@cucumber/cucumber';
 import { chromium } from 'playwright';
 import { environment } from '../config/loadEnvironment.js';
+import { AfterStep } from '@cucumber/cucumber';
+import fs from 'node:fs';
 
 setDefaultTimeout(60000);
 
@@ -53,10 +55,22 @@ Before(async function ({ pickle }) {
 
 After(async function (scenario) {
   const failed = scenario.result?.status === Status.FAILED;
-  const text = (this.diagnosticLogLines ?? []).join('\n');
 
+  // Estrategia 1 (resumen controlado por escenario)
+  const text = (this.diagnosticLogLines ?? []).join('\n');
   if (text && (logVerbose || failed)) {
     await this.attach(text, 'text/plain');
+  }
+
+  // Estrategia D32 (por job): adjuntar DEBUG=pw:api SOLO si falló
+  if (failed) {
+    const logPath = process.env.PW_API_LOG_PATH;
+    if (logPath && fs.existsSync(logPath)) {
+      const pwApiText = fs.readFileSync(logPath, 'utf8');
+      if (pwApiText) {
+        await this.attach(pwApiText, 'text/plain');
+      }
+    }
   }
 
   if (failed && this.page) {
@@ -66,6 +80,15 @@ After(async function (scenario) {
 
   if (this.page) await this.page.close();
   if (this.context) await this.context.close();
+});
+
+AfterStep(async function ({ pickleStep }) {
+  if (process.env.SCREENSHOT_EACH_STEP !== 'true') return;
+  if (!this.page) return;
+
+  const label = pickleStep?.text?.replace(/[^\w\-]+/g, '_').slice(0, 80) ?? 'step';
+  const png = await this.page.screenshot({ fullPage: true });
+  await this.attach(png, 'image/png');
 });
 
 AfterAll(async function () {
